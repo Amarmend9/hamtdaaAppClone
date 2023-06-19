@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #0055FF;
+  --light-grey : #EEEEEE;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka";
+  background-color: #e3ecf5;
+}
+
+a {
+  margin: 0 5px; 
+  padding: 18px;
+  border: none;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+i {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+/* Navigation Menu */
+  nav {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+
+  #logo a{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  #middle-menu {
+    display: flex;
+  }
+
+  #middle-menu a {
+    background-color: var(--light-grey);
+  }
+
+  #search {
+    background-color: var(--light-grey);
+    padding: 10px;
+    display: flex;
+    place-items: center;
+    border-radius: 30px;
+  }
+
+  #search i {
+    color: #ced4da;
+    padding: 0 10px;
+  }
+
+  #search input {
+    border: none;
+    background-color: var(--light-grey);
+    padding: 5px;
+    min-width: 300px;
+  }
+
+  #right-menu i {
+    color: var(--primary-color);
+  }
+
+/* Sidebar Menu */
+  #sidebar-menu {
+    display: inline-block;
+  }
+
+  #sidebar-menu #main, 
+  #sidebar-menu #account-page,
+  #sidebar-menu #logout {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 300px;
+    margin: 10px 15px;
+    padding: 15px 10px;
+    border-radius: 20px;
+  }
+
+  #sidebar-menu p, a {
+    color: #888888;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+  }
+
+  #sidebar-menu a:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+
+  #sidebar-menu p {
+    padding: 10px 25px;
+  }
+
+  #sidebar-menu i {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 1rem;
+  }
+
+  #sidebar-menu #main i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+  }
+
+  #sidebar-menu .fa-house, 
+  #sidebar-menu .fa-globe {
+    background: linear-gradient(135deg, #05f, #09f) !important;
+  }
+
+  #sidebar-menu .fa-calendar {
+    background: linear-gradient(90deg, #ee0979, #ff6a00) !important;
+  }
+
+  #sidebar-menu .fa-location-dot {
+    background: linear-gradient(90deg, #f2994a, #f2c94c) !important;
+  }
+
+  #sidebar-menu .fa-user {
+    background: linear-gradient(90deg, #0575e6, #021b79) !important;
+  }
+
+  #sidebar-menu .fa-user-group {
+    background: linear-gradient(90deg, #e44d26, #f16529) !important;
+  }
+
+  #sidebar-menu #account-page i {
+    color: var(--primary-color) !important;
+    font-size: 1.4rem;
+  }
+
+

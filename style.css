@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Fredoka";
+  font-family: "Fredoka", sans-serif;
   background-color: #e3ecf5;
 }
 
@@ -26,6 +26,13 @@ i {
   color: #888;
 }
 
+#container {
+  display: grid;
+  grid-template-columns: 2;
+  position: absolute;
+  top: 80px;
+}
+
 /* Navigation Menu */
   nav {
     padding: 15px;
@@ -33,6 +40,9 @@ i {
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
   }
 
   #logo a{
@@ -76,6 +86,20 @@ i {
 /* Sidebar Menu */
   #sidebar-menu {
     display: inline-block;
+    position: fixed;
+    /* top: 85px; */
+    overflow-y: scroll;
+    height: 90vh;
+  }
+
+  #sidebar-menu::-webkit-scrollbar {
+    background-color: inherit;
+    width: 0.15em;
+  }
+
+  #sidebar-menu::-webkit-scrollbar-thumb {
+    width: 0.2em;
+    background-color: #777777;
   }
 
   #sidebar-menu #main, 
@@ -102,6 +126,7 @@ i {
   }
 
   #sidebar-menu p {
+    font-size: 12px;
     padding: 10px 25px;
   }
 
@@ -119,6 +144,11 @@ i {
     height: 40px;
     border-radius: 50%;
     color: #fff;
+  }
+
+  #sidebar-menu #account-page i {
+    color: var(--primary-color) !important;
+    font-size: 1.4rem;
   }
 
   #sidebar-menu .fa-house, 
@@ -142,9 +172,6 @@ i {
     background: linear-gradient(90deg, #e44d26, #f16529) !important;
   }
 
-  #sidebar-menu #account-page i {
-    color: var(--primary-color) !important;
-    font-size: 1.4rem;
-  }
+  
 
 
